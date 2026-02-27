@@ -144,25 +144,25 @@ export default function FechamentoInterativo({
         <div className="space-y-6 animate-fade-in">
           {/* CARDS DE RESUMO FINANCEIRO */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gradient-to-br from-green-500 to-green-600 p-6 rounded-xl shadow text-white flex items-center gap-4">
+            <div className="bg-gradient-to-br from-green-500 to-green-600 p-2 rounded-xl shadow text-white flex items-center gap-4">
               <div className="bg-white/20 p-4 rounded-full">
-                <DollarSign size={32} />
+                <DollarSign size={24} />
               </div>
               <div>
-                <p className="text-green-100 font-medium">Faturamento Total</p>
-                <h2 className="text-4xl font-bold">
+                <p className="text-green-100 font-light">Faturamento Total</p>
+                <h2 className="text-2xl font-bold">
                   R$ {totalFaturamento.toFixed(2)}
                 </h2>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl shadow text-white flex items-center gap-4">
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-1 rounded-xl shadow text-white flex items-center gap-4">
               <div className="bg-white/20 p-4 rounded-full">
-                <Scissors size={32} />
+                <Scissors size={20} />
               </div>
               <div>
-                <p className="text-blue-100 font-medium">Serviços Realizados</p>
-                <h2 className="text-4xl font-bold">{totalCortes}</h2>
+                <p className="text-blue-100 font-light">Serviços Realizados</p>
+                <h2 className="text-2xl font-bold">{totalCortes}</h2>
               </div>
             </div>
           </div>

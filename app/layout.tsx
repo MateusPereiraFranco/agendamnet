@@ -32,7 +32,7 @@ export default async function RootLayout({
         <ThemeProvider>
           {logado && <Sidebar funcaoUsuario={funcao} nomeUsuario={nome} />}
 
-          <main className=" bg-white dark:bg-gray-900 flex-1 overflow-y-auto">
+          <main className=" bg-white dark:bg-gray-900 flex-1 overflow-y-auto flex-1 p-4 pb-10 md:p-8">
             {children}
           </main>
         </ThemeProvider>

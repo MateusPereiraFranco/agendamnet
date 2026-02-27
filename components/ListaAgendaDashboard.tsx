@@ -129,7 +129,7 @@ export default function ListaAgendaDashboard({
   );
 
   return (
-    <div className="space-y-6 divide-y divide-gray-100 dark:divide-gray-500 ">
+    <div className=" divide-y divide-gray-100 dark:divide-gray-500 flex-1 overflow-y-auto md:pb-20">
       {" "}
       {/* pb-20 dá espaço extra para o dropdown não ser cortado */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -248,13 +248,13 @@ export default function ListaAgendaDashboard({
                   onClick={() =>
                     salvarAlteracao(ag.id, ag.status, ag.data_hora)
                   }
-                  className="p-2 bg-green-100 dark:bg-green-600 text-green-700 dark:text-green-50 rounded h-10 w-10 flex items-center justify-center"
+                  className="p-2 bg-green-100 dark:bg-green-600 text-green-700 dark:text-green-50 rounded h-10 w-10 flex items-center justify-center dark:hover:bg-green-500"
                 >
                   <Check size={18} />
                 </button>
                 <button
                   onClick={() => setEditandoId(null)}
-                  className="p-2 bg-gray-100 dark:bg-red-600 text-gray-700 dark:text-gray-50 rounded h-10 w-10 flex items-center justify-center"
+                  className="p-2 bg-gray-100 dark:bg-red-600 dark:hover:bg-red-500 text-gray-700 dark:text-gray-50 rounded h-10 w-10 flex items-center justify-center"
                 >
                   <X size={18} />
                 </button>
@@ -303,7 +303,7 @@ export default function ListaAgendaDashboard({
                   <>
                     <button
                       onClick={() => iniciarEdicao(ag)}
-                      className="p-2 bg-gray-100 dark:bg-gray-1000 text-gray-700 dark:text-white dark:bg-blue-600 rounded hover:bg-gray-200"
+                      className="p-2 bg-gray-100 dark:bg-gray-1000 text-gray-700 dark:text-white dark:bg-blue-600 rounded hover:bg-blue-500"
                     >
                       <Edit2 size={18} />
                     </button>
@@ -323,7 +323,7 @@ export default function ListaAgendaDashboard({
                           ),
                         )
                       }
-                      className="p-2 bg-green-50 text-green-600 dark:text-white dark:bg-green-600 rounded hover:bg-green-100"
+                      className="p-2 bg-green-50 text-green-600 dark:text-white dark:bg-green-600 rounded hover:bg-green-500"
                     >
                       <CheckCircle size={18} />
                     </button>
@@ -342,7 +342,7 @@ export default function ListaAgendaDashboard({
                           ),
                         )
                       }
-                      className="p-2 bg-red-50 text-red-600 dark:text-white dark:bg-red-600 rounded hover:bg-red-100"
+                      className="p-2 bg-red-50 text-red-600 dark:text-white dark:bg-red-600 rounded hover:bg-red-500"
                     >
                       <XCircle size={18} />
                     </button>

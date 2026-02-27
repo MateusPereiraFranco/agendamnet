@@ -34,7 +34,7 @@ export default function Sidebar({
   useEffect(() => setMontado(true), []);
 
   const links = [
-    { nome: "Dashboard", rota: "/", icone: <LayoutDashboard size={20} /> },
+    { nome: "Início", rota: "/", icone: <LayoutDashboard size={20} /> },
     { nome: "Agenda", rota: "/agenda", icone: <Calendar size={20} /> },
     { nome: "Clientes", rota: "/clientes", icone: <Users size={20} /> },
     { nome: "Fechamento", rota: "/fechamento", icone: <LineChart size={20} /> },
